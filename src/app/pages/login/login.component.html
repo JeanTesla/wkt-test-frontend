@@ -1,0 +1,26 @@
+<div class="container" style="background-color: #4ab3c6;">
+  <div class="content">
+    <div id="login">
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <h1>BloodSanguer</h1>
+        <p>
+          <label for="nome_login">Email</label>
+          <input type="text" id="nome_login" name="nome_login" matInput placeholder="Username"
+            formControlName="username">
+        </p>
+        <p>
+          <label for="email_login">Senha</label>
+          <input id="email_login" name="email_login" type="password" matInput placeholder="Password"
+            formControlName="password">
+        </p>
+        <p>
+          <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+          <label for="manterlogado"> Manter-se conectado</label>
+        </p>
+        <p>
+          <input type="submit" value="Logar" />
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
